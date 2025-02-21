@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+</head>
+<body>
+    <header>
+        <img src="/assets/images/decosta.svg" alt="DeCosta Group" class="logo">
+    </header>
+    <main><form action="form_step1" method="post" class="form_base">
+        <label for="full_name">ПІБ :</label>
+        <input type="text" id="full_name" name="full_name" required>
+
+        <label for="phone">Контактний телефон :</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="email">E-mail :</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="company">Компанія :</label>
+        <input type="text" id="company" name="company">
+
+        <label for="business_sector">Сфера бізнесу :</label>
+        <select id="business_sector" name="business_sector">
+            <option value="">Оберіть сферу</option>
+            <option value="retail">Роздрібна торгівля</option>
+            <option value="food_service">Громадське харчування</option>
+            <option value="manufacturing">Виробництво</option>
+            <option value="logistics">Складська логістика</option>
+        </select>
+
+       <div class="label_checkbox"> <label class="checkbox_label" for="legal_status">Юридична особа</label>
+        <input class="label_checkbox_input" type="checkbox" id="legal_status" name="legal_status" required>
+ </div>
+ <div class="label_checkbox"> <label class="checkbox_label" for="legal_status">Фізична особа</label>
+    <input class="label_checkbox_input" type="checkbox" id="legal_status" name="legal_status" required>
+</div>
+
+        <button type="submit">Далі</button>
+    </form></main>
+    
+
+</body>
+</html>
